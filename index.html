@@ -39,7 +39,9 @@ Tiempo restante hasta el eventual suceso:
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Apr 11, 2021 23:23:4").getTime();
-
+// Tengo que mirar como introducir la variable en pantalla
+var code="FIN"
+// *****************************************************
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -64,12 +66,16 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "Finis dierum";
   }
+  if (code=="FINal"){
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Finis dierum";
+  }
 }, 1000);
 </script>
 </h1></font></center></div>
 
 <center>
-Nope, aquí sigue sin haber nada... aún.
+Nope, aquí sigue sin haber nada... aún...
 <p> Bueno... dejaré alguna recompensa por la curiosidad; la primera pista, "VEGA". </p>
 </center>
 
