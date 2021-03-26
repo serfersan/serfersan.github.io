@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="https://www.estrdvadlkhvdñgwgl.css">
-				<style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.estrdvadlkhvdñgwgl.css">
+<style>
 h1 {
-    color: red;
-    text-shadow: 1px 1px 15px yellow, 0 0 15px darkred, 0 0 5px purple;
+color: purple;
+text-shadow: 11px 12px 15px red, 0 0 15px darkred, 0 0 5px purple;
 }
 h2 {
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px pink;
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px pink;
 }
 
 h3 {
-    color: yellow;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px orange;
+color: yellow;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px orange;
 }
 </style>
 <head>
-	<title>StoneLord</title>
+<title>StoneLord</title>
 </head>
 <body bgcolor="black">
-	<h2>
-		<center>
-			<font size="6">
+<h2>
+<center>
+<font size="6">
 ¿Qué haces aquí? ¿Tal es tu curiosidad? Desgraciadamente esto aún está en desarrollo. 
 
-								
-<p> Paciencia, en un futuro no muy lejano esta página tendrá uso. Pues un suceso acaecerá... eventualmente...</p>
+
+
+
+<p> PPaciencia, en un futuro no muy lejano esta página tendrá uso. Pues un suceso acaecerá... eventualmente...</p>
 <p> ;) </p>
 </font>
 </center>
@@ -51,6 +53,7 @@ Tiempo restante hasta el eventual suceso:
 <input style="position:absolute; top:58%; left:5%; width:40%;" type="text" id="userInput" />
 <input style="position:absolute; top:58%; left:51%; width:40%;color:red;" type="submit" onclick="othername();" />
 </form>
+<h2 id="ejemplo"></h2>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Apr 11, 2021 23:23:4").getTime();
@@ -89,10 +92,20 @@ if (input=="stop"){
 clearInterval(x);
 document.getElementById("demo").innerHTML = days + "d " + hours + "h "
 + minutes + "m " + seconds + "s";
-alert("Exito en "+ minutes + " m " + seconds + " s ");
-    
+//alert("Exito en "+ minutes + " m " + seconds + " s ");
+function myFunction() {
+var txt;
+if (confirm("Conseguido!")) {
+txt = "Defused!";
+} else {
+txt = "Defused!";
+}
+document.getElementById("ejemplo").innerHTML = txt;
+}
 }
 }, 1000);
+
+
 </script>
 </h1>
 </font>
@@ -100,6 +113,8 @@ alert("Exito en "+ minutes + " m " + seconds + " s ");
 </div>
 
 Nope, aquí sigue sin haber nada... aún...
+
+
 
 
 <p> Bueno... dejaré alguna recompensa por la curiosidad; la primera pista, "VEGA". </p>
