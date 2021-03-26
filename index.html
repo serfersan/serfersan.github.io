@@ -88,7 +88,7 @@ var x = setInterval(function() {
   if (input=="stop"){
     clearInterval(x);
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  + minutes + "m " + seconds + "s";
   }
 }, 1000);
 
@@ -98,12 +98,17 @@ var x = setInterval(function() {
 							</font>
 						</center>
 					</div>
-					<h3><center><script>
-					    if(input=="stop"){
-					        document.getElementById("demo").innerHTML = "Cuenta atrás abortada!";
-					    }
-					</script></center></h3>
+					<?php if(input=="stop"){
+?>
+   <p style="color: yellow;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue"><center>
+					    Cuenta atrás abortada...
+					</center></p>
 					<center>
+<?php
+}
+					
+					
 Nope, aquí sigue sin haber nada... aún...
 
 						
