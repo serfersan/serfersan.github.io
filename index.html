@@ -19,7 +19,7 @@ h3 {
 }
 </style>
 				<head>
-					<title>Gymkana</title>
+					<title>Gymkana2</title>
 				</head>
 				<body bgcolor="black">
 					<h2>
@@ -60,10 +60,6 @@ function othername() {
     input = document.getElementById("userInput").value;
     if(input=="help"){alert("Aquí te ayudo más");}
 }
-function example() {
-    input = document.getElementById("userInput").value;
-    if(input=="stop"){alert("parada en tiempo");}
-}
 }
 // *****************************************************
 // Update the count down every 1 second
@@ -94,6 +90,7 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s";
+  alert("Tiempo restante: "+ minutes + " m " + seconds + " s")
   }
 }, 1000);
 
