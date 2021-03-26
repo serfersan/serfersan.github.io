@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.estrdvadlkhvdñgwgl.css">
-<style>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://www.estrdvadlkhvdñgwgl.css">
+				<style>
 h1 {
     color: purple;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -13,34 +13,49 @@ h2 {
     text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px pink;
 }
 </style>
-
-<head>
-
-<title>stonelord SRL</title>
-
-</head>
-
-<body bgcolor="black">
-
-<h2><center><font size="6">
+				<head>
+					<title>stonelord SRL</title>
+				</head>
+				<body bgcolor="black">
+					<h2>
+						<center>
+							<font size="6">
 ¿Qué haces aquí? ¿Tal es tu curiosidad? Desgraciadamente esto aún está en desarrollo. 
-<p> Paciencia, en un futuro no muy lejano esta página tendrá uso. Pues un suceso acaecerá... eventualmente...</p>
-<p> ;) </p>
-</font></center></h2>
 
-<h2><center><font size="6">
+								<p> Paciencia, en un futuro no muy lejano esta página tendrá uso. Pues un suceso acaecerá... eventualmente...</p>
+								<p> ;) </p>
+							</font>
+						</center>
+					</h2>
+					<h2>
+						<center>
+							<font size="6">
 Tiempo restante hasta el eventual suceso:
-</font></center></h2>
+</font>
+						</center>
+					</h2>
+					<div style="color:purple;padding:23px;">
+						<center>
+							<font size="18">
+								<h1>
+									<!-- Display the countdown timer in an element -->
+									<p id="demo"></p>
 
-<div style="color:purple;padding:23px;"><center><font size="18"><h1>
+<!-- ****************************************************-->
+<form id="form" onsubmit="return false;">
+<input style="position:absolute; top:58%; left:5%; width:40%;" type="text" id="userInput" />
+<input style="position:absolute; top:58%; left:51%; width:40%;color:red;" type="submit" onclick="othername();" />
+</form>
 
-<!-- Display the countdown timer in an element -->
-<p id="demo"></p>
-<script>
+									<script>
 // Set the date we're counting down to
 var countDownDate = new Date("Apr 11, 2021 23:23:4").getTime();
 // Tengo que mirar como introducir la variable en pantalla
-var code="FIN"
+var input="NotAverted"
+function othername() {
+    input = document.getElementById("userInput").value;
+    alert(input);
+}
 // *****************************************************
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -66,19 +81,21 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "Finis dierum";
   }
-  if (code=="FINal"){
+  if (input==3){
     clearInterval(x);
     document.getElementById("demo").innerHTML = "Finis dierum";
   }
 }, 1000);
-</script>
-</h1></font></center></div>
 
-<center>
+									</script>
+								</h1>
+							</font>
+						</center>
+					</div>
+					<center>
 Nope, aquí sigue sin haber nada... aún...
-<p> Bueno... dejaré alguna recompensa por la curiosidad; la primera pista, "VEGA". </p>
-</center>
 
-</body>
-
-</html>
+						<p> Bueno... dejaré alguna recompensa por la curiosidad; la primera pista, "VEGA". </p>
+					</center>
+				</body>
+			</html>
