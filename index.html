@@ -6,7 +6,7 @@
 				<style>
 h1 {
     color: red;
-    text-shadow: 1px 1px 15px yellow, 0 0 25px darkred, 0 0 5px purple;
+    text-shadow: 1px 1px 15px yellow, 0 0 15px darkred, 0 0 5px purple;
 }
 h2 {
     color: white;
@@ -18,92 +18,90 @@ h3 {
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px orange;
 }
 </style>
-				<head>
-					<title>Gymkanaa</title>
-				</head>
-				<body bgcolor="black">
-					<h2>
-						<center>
-							<font size="6">
+<head>
+	<title>StoneLord</title>
+</head>
+<body bgcolor="black">
+	<h2>
+		<center>
+			<font size="6">
 ¿Qué haces aquí? ¿Tal es tu curiosidad? Desgraciadamente esto aún está en desarrollo. 
 
 								
-								<p> Paciencia, en un futuro no muy lejano esta página tendrá uso. Pues un suceso acaecerá... eventualmente...</p>
-								<p> ;) </p>
-							</font>
-						</center>
-					</h2>
-					<h2>
-						<center>
-							<font size="6">
+<p> Paciencia, en un futuro no muy lejano esta página tendrá uso. Pues un suceso acaecerá... eventualmente...</p>
+<p> ;) </p>
+</font>
+</center>
+</h2>
+<h2>
+<center>
+<font size="6">
 Tiempo restante hasta el eventual suceso:
 </font>
-						</center>
-					</h2>
-					<div style="color:purple;padding:23px;">
-						<center>
-							<font size="18">
-								<h1>
-									<!-- Display the countdown timer in an element -->
-									<p id="demo"></p>
-									<!-- ****************************************************-->
-									<form id="form" onsubmit="return false;">
-										<input style="position:absolute; top:58%; left:5%; width:40%;" type="text" id="userInput" />
-										<input style="position:absolute; top:58%; left:51%; width:40%;color:red;" type="submit" onclick="othername();" />
-									</form>
-									<script>
+</center>
+</h2>
+<div style="color:purple;padding:23px;">
+<center>
+<font size="18">
+<h1>
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+<!-- ****************************************************-->
+<form id="form" onsubmit="return false;">
+<input style="position:absolute; top:58%; left:5%; width:40%;" type="text" id="userInput" />
+<input style="position:absolute; top:58%; left:51%; width:40%;color:red;" type="submit" onclick="othername();" />
+</form>
+<script>
 // Set the date we're counting down to
 var countDownDate = new Date("Apr 11, 2021 23:23:4").getTime();
 // Tengo que mirar como introducir la variable en pantalla
 var input="NotAverted"
 function othername() {
-    input = document.getElementById("userInput").value;
-    if(input=="help"){alert("Aquí te ayudo más");}
+input = document.getElementById("userInput").value;
+if(input=="help"){alert("Aquí te ayudo más");}
 }
 }
 // *****************************************************
 // Update the count down every 1 second
 var x = setInterval(function() {
 
-  // Get todays date and time
-  var now = new Date().getTime();
+// Get todays date and time
+var now = new Date().getTime();
 
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
+// Find the distance between now an the count down date
+var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+// Time calculations for days, hours, minutes and seconds
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
- document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+// Display the result in the element with id="demo"
+document.getElementById("demo").innerHTML = days + "d " + hours + "h "
++ minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "Finis dierum...";
-  }
-  if (input=="stop"){
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s";
-  alert("Tiempo restante: "+ minutes + " m " + seconds + " s")
+// If the count down is finished, write some text
+if (distance < 0) {
+clearInterval(x);
+document.getElementById("demo").innerHTML = "Finis dierum...";
+}
+if (input=="stop"){
+clearInterval(x);
+document.getElementById("demo").innerHTML = days + "d " + hours + "h "
++ minutes + "m " + seconds + "s";
   }
 }, 1000);
+</script>
+</h1>
+</font>
+</center>
+</div>
 
-									
-									</script>
-								</h1>
-							</font>
-						</center>
-					</div>
 Nope, aquí sigue sin haber nada... aún...
 
-						
-						<p> Bueno... dejaré alguna recompensa por la curiosidad; la primera pista, "VEGA". </p>
-					</center>
-				</body>
-			</html>
+
+<p> Bueno... dejaré alguna recompensa por la curiosidad; la primera pista, "VEGA". </p>
+</center>
+</body>
+</html>
