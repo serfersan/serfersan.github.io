@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="https://www.estrdvadlkhvdñgwgl.css">
 <style>
 h1 {
-color: red;
-text-shadow: 11px 12px 15px darkred, 0 0 15px orange, 0 0 5px purple;
+color: rgb(90, 61, 177);
+text-shadow: 11px 12px 15px rgb(200, 188, 211), 0 0 15px rgb(162, 235, 235), 0 0 5px purple;
 }
 h2 {
 color: white;
@@ -19,22 +19,22 @@ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px orange;
 }
 </style>
 <head>
-<title>S-C: 270/13</title>
+<title>Ejercicio informatica</title>
 </head>
 <body bgcolor="black">
 <h2 style="margin-top:2cm;">
 <center>
 <font size="6">
-Protocolo 270/13 reanudado, cuenta regresiva iniciada...
+Ejercicio html: Cosas varias
 </font>
 </center>
 </h2>
 <h2>
-<center>
+<left>
 <font size="5">
-Tiempo restante:
+Parte 1: Cuenta atrás que finalizará el 30 de junio a las 9:30. Tiempo restante:
 </font>
-</center>
+</left>
 </h2>
 <div style="color:purple;padding:5px;">
 <center>
@@ -43,18 +43,20 @@ Tiempo restante:
 <!-- Display the countdown timer in an element -->
 <p id="demo"></p>
 <form id="form" onsubmit="return false;">
-<input style="position:absolute; top:3%; left:5%; width:40%;" type="text" id="userInput" />
-<input style="position:absolute; top:3%; left:51%; width:40%;color:red;" type="submit" onclick="othername();" />
+<input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
+<input style="position:absolute; top:80%; left:51%; width:40%;color:rgb(255, 8, 8);" type="submit" onclick="othername();" />
 </form>
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("September 1, 2024 09:18:01").getTime();
+var countDownDate = new Date("June 30, 2024 09:30:01").getTime();
 // Tengo que mirar como introducir la variable en pantalla
 var input="NotAverted"
 function othername() {
 input = document.getElementById("userInput").value;
-if(input=="viena285"){alert("Para evitar el ciclo sin fin de puertas, sigue la secuencia: primero la puerta a la derecha de la iluminada, prosigue por la puerta central, seguidamente toma la puerta azul. Tras esto has de tomar la segunda puerta por la izquierda y finalmente la tercera por la derecha");}
+if(input=="Alerta"){alert("Para evitar el ciclo sin fin de puertas, sigue la secuencia: primero la puerta a la derecha de la iluminada, prosigue por la puerta central, seguidamente toma la puerta azul. Tras esto has de tomar la segunda puerta por la izquierda y finalmente la tercera por la derecha");}
+if(input=="Guia"){window.open("https://www.nicolasserrano.com/CS/HTML/CursoHTML.html")}
 }
+
 // *****************************************************
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -78,11 +80,11 @@ if (distance < 0) {
 clearInterval(x);
 document.getElementById("demo").innerHTML = "Finis dierum...";
 }
-if (input=="makalu"){
+if (input=="Stop"){
 clearInterval(x);
 document.getElementById("demo").innerHTML = days + "d " + hours + "h "
 + minutes + "m " + seconds + "s";
-alert("Protocolo 270/13 abortado exitosamente a tiempo: "+ days + "d " + hours + "h "
+alert("Cuenta atrás detenida en tiempo: "+ days + "d " + hours + "h "
 + minutes + "m " + seconds + "s");
 }
 }, 1000);
@@ -93,5 +95,17 @@ alert("Protocolo 270/13 abortado exitosamente a tiempo: "+ days + "d " + hours +
 </font>
 </center>
 </div>
+
+<h2>
+    <left>
+    Palabras clave para el formulario:
+    <ul>
+        <li>Guia: Guia html del curso</li>
+        <li>Stop: Detiene la cuenta atrás</li>
+        <li>Alerta: envía un mensaje de alerta</li>
+    </ul>
+</left>
+</h2>
+
 </body>
 </html>
