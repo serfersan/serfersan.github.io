@@ -1,111 +1,118 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.estrdvadlkhvdñgwgl.css">
-<style>
-h1 {
-color: rgb(90, 61, 177);
-text-shadow: 11px 12px 15px rgb(200, 188, 211), 0 0 15px rgb(162, 235, 235), 0 0 5px purple;
-}
-h2 {
-color: white;
-text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px pink;
-}
+<html lang="es">
 
-h3 {
-color: yellow;
-text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px orange;
-}
-</style>
 <head>
-<title>Ejercicio informatica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio informática</title>
+    <style>
+        body {
+            color: grey;
+        }
+
+        h1 {
+            font-size: 10;
+            padding: 1%;
+            color: #000000;
+            text-shadow: 11px 12px 15px rgb(200, 188, 211), 0 0 15px #FFC813, 0 0 5px purple;
+        }
+
+        h2 {
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px pink;
+        }
+
+        h3 {
+            color: yellow;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px orange;
+        }
+
+        A {
+            color: #5c75e4;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-color: #2F27BF;
+            padding: 0.01cm;
+        }
+
+        table {
+            border: 1px solid;
+            color: black;
+            background-color: #5c75e4;
+            column-rule-color: #000000;
+            column-rule-width: 6px;
+            padding: 8px;
+            border-color: #FFC813;
+        }
+    </style>
 </head>
-<body bgcolor="black">
-<h2 style="margin-top:2cm;">
-<center>
-<font size="6">
-Ejercicio html: Cosas varias
-</font>
-</center>
-</h2>
-<h2>
-<left>
-<font size="5">
-Parte 1: Cuenta atrás que finalizará el 30 de junio a las 9:30. Tiempo restante:
-</font>
-</left>
-</h2>
-<div style="color:purple;padding:5px;">
-<center>
-<font size="7">
-<h1>
-<!-- Display the countdown timer in an element -->
-<p id="demo"></p>
-<form id="form" onsubmit="return false;">
-<input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
-<input style="position:absolute; top:80%; left:51%; width:40%;color:rgb(255, 8, 8);" type="submit" onclick="othername();" />
-</form>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("June 30, 2024 09:30:01").getTime();
-// Tengo que mirar como introducir la variable en pantalla
-var input="NotAverted"
-function othername() {
-input = document.getElementById("userInput").value;
-if(input=="Alerta"){alert("Para evitar el ciclo sin fin de puertas, sigue la secuencia: primero la puerta a la derecha de la iluminada, prosigue por la puerta central, seguidamente toma la puerta azul. Tras esto has de tomar la segunda puerta por la izquierda y finalmente la tercera por la derecha");}
-if(input=="Guia"){window.open("https://www.nicolasserrano.com/CS/HTML/CursoHTML.html")}
-}
 
-// *****************************************************
-// Update the count down every 1 second
-var x = setInterval(function() {
-// Get todays date and time
-var now = new Date().getTime();
-// Find the distance between now an the count down date
-var distance = countDownDate - now;
+<body>
 
-// Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    <h1 style="margin-top:1cm;">
+        <font size="12">
+            python en mi investigación [nombre provisional]
+        </font>
+    </h1>
+    <h2>
+        <font size="4">
+            Algunas de las librerías principales y link a su documentación:
+            <ul>
+                <li>NumPy: <A HREF="https://numpy.org/doc/">https://numpy.org/doc/</A></li>
+                <li>Pandas: <A HREF="https://pandas.pydata.org/">https://pandas.pydata.org/</A></li>
+                <li>Matplotlib: <A
+                        HREF="https://matplotlib.org/stable/index.html">https://matplotlib.org/stable/index.html</A>
+                </li>
+                <li>scipy.optimize: <A
+                        HREF="https://docs.scipy.org/doc/scipy/tutorial/optimize.html">https://docs.scipy.org/doc/scipy/tutorial/optimize.html</A>
+                </li>
+                <li>Alerta: envía un mensaje de alerta</li>
+            </ul>
+        </font>
+    </h2>
 
-// Display the result in the element with id="demo"
-document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s ";
+    <p>
+        Construir una tabla con cada una de las librerias y su uso. Llevar a la cuenta de github con algunos
+        repositorios. Luego grabar con panopto.
+    </p>
 
-// If the count down is finished, write some text
-if (distance < 0) {
-clearInterval(x);
-document.getElementById("demo").innerHTML = "Finis dierum...";
-}
-if (input=="Stop"){
-clearInterval(x);
-document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s";
-alert("Cuenta atrás detenida en tiempo: "+ days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s");
-}
-}, 1000);
+    <Table rules="all">
+        <TR>
+            <TD><b>
+                    <center>Librería</center>
+                </b></TD>
+            <TD><b>
+                    <center>Uso</center>
+                </b></TD>
+        </TR>
+        <TR>
+            <TD>Numpy</TD>
+            <TD>Cálculo numérico</TD>
+        </TR>
+    </Table>
+    <p>
+        <!-- Parrafo vacío para marcar separación con el formulario-->
+    </p>
+    <form id="form" onsubmit="return false;">
+        <input type="text" placeholder="Introduce info..." id="userInput" />
+        <input style="color:rgb(119, 64, 221);" type="submit" value="Pulsa" onclick="othername();" />
+    </form>
 
-
-</script>
-</h1>
-</font>
-</center>
-</div>
-
-<h2>
-    <left>
-    Palabras clave para el formulario:
-    <ul>
-        <li>Guia: Guia html del curso</li>
-        <li>Stop: Detiene la cuenta atrás</li>
-        <li>Alerta: envía un mensaje de alerta</li>
-    </ul>
-</left>
-</h2>
+    <script>
+        function othername() {
+            let input = document.getElementById("userInput").value;
+            if (input == "Alerta") {
+                alert("mensaje alerta");
+            }
+            if (input == "Paletton") {
+                window.open("https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF");
+            }
+            if (input == "Guia") {
+                window.open("https://www.nicolasserrano.com/CS/HTML/CursoHTML.html");
+            }
+        }
+    </script>
 
 </body>
+
 </html>
