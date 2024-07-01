@@ -1,5 +1,5 @@
-## Elementos a visualizar:
-To do...
-```
-Code to do...
-```
+## Elementos que incorpora la página web:
+  - Explicación breve de la tesis
+  - Algunas imágenes
+  - Hipervínculos
+  - Elementos interactivos
